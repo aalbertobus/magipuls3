@@ -1,0 +1,164 @@
+@import "iconitos.styl"
+
+a
+	color #00F
+
+a:visited
+	color #00D
+
+body
+	background #CBF5F5
+	color #333
+	font-family "Nunito"
+	font-size 16px
+	text-align left
+
+header
+	background #222
+	border-bottom 3px solid #0AF
+	color #DDD
+	margin 0
+	padding 0.5em
+	position fixed
+	width 100%
+	
+	img
+		width 100%
+
+	h1
+		font-size 16px
+		font-weight normal
+		margin 0
+		padding 0
+
+	#avatar, #logo, #titulo_nav 
+		display inline-block
+		vertical-align top
+
+	#avatar, #logo
+		height 40px
+		width 40px
+
+	#avatar a
+		background #444
+		display block
+		margin 0
+		padding 3px
+		text-decoration none
+
+	#titulo_nav 
+		width 70%
+
+		nav a
+			color white
+			border-bottom 4px solid #0AF
+			border-left 1px solid #0AF
+			border-right 1px solid #0AF
+			font-size 0.8em
+			padding 0.1em 1em
+			text-decoration none
+
+		nav a:hover
+			border-color white
+
+#contenido
+	padding 4em 0.5em
+
+	#nota
+		background #FAFAD6
+		border-radius 1em
+		font-size 0.8em
+		height 3em
+		margin 1em
+		overflow hidden
+		padding 0 2em
+		text-align justify
+		transition all 1s ease
+
+	#nota:hover
+		height 26em
+	.item
+		background white
+		border 2px solid #DDD
+		border-radius 0.5em
+		margin 0.5em 0 0 0
+		overflow hidden
+		padding 0.5em
+		
+		h2
+			
+			font-size 1em 
+			margin 0
+			padding 0
+
+			a
+				color #4DA3F8
+				font-size 1em
+				text-decoration none
+
+		.autor
+			font-size 0.7em
+			margin -3em 0 0 15%
+
+			a
+				color: #444
+				text-decoration none
+
+			a:hover
+				color:#666
+			
+			p
+				display inline
+
+			.iconito-star
+				color #CC0
+				cursor pointer
+				display inline-block
+				font-size 1.5em
+				vertical-align middle
+
+			.iconito-star:hover:before
+				color #ED0 
+				content: "\e003"
+
+			.tag 
+				background #80CCB2
+				border-radius 0.5em
+				color white
+				cursor pointer
+				display inline-block
+				font-weight bold
+				padding 0.5em
+				margin  0 0 2px 1em
+
+			.tag:hover
+				background #589D86
+
+		.titulo_item, .votos
+			display inline-block
+			vertical-align top
+
+		.titulo_item
+			width 80%
+
+			figure
+				float right
+				
+		.votos
+			text-align center
+			width 14%
+
+			a
+				text-decoration none
+
+			a:hover
+				font-size 1.3em
+				transition all 0.5s ease
+
+			.up
+				color #0B77F2
+
+			.down
+				color #F2420B
+
+@import "responsive.styl"
